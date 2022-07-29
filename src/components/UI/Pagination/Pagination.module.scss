@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  gap: 5px;
+
+  button {
+    color: white;
+    border: none;
+    outline: none;
+    background: #5319ce;
+    transition: .3s;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:disabled {
+      opacity: 0.7;
+    }
+
+    &:hover {
+      background: #4213a8;
+    }
+  }
+
+  li {
+    color: #222222;
+    padding: 10px 15px;
+    background: #ccc;
+    cursor: pointer;
+
+
+    &.active {
+      background: #5319ce;
+      color: white;
+    }
+  }
+}

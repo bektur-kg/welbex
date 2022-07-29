@@ -1,0 +1,48 @@
+.root {
+  border-collapse: collapse;
+  margin: 1rem 10px;
+  font-size: 16px;
+  width: 80%;
+  min-height: 255px;
+  border: 1px solid #ccc;
+
+  thead {
+
+    tr {
+      text-align: center;
+      font-size: 18px;
+      background: #6a37d7;
+      color: whitesmoke;
+
+      th {
+        font-weight: 400;
+        text-transform: capitalize;
+        padding: 1rem;
+
+        &.loadingContainer {
+
+        }
+      }
+    }
+  }
+
+  tbody {
+
+    tr {
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+
+      &:nth-child(even) {
+        background: #f3f3f3;
+      }
+
+      td {
+
+        padding: 10px 1rem;
+
+      }
+    }
+  }
+
+
+}

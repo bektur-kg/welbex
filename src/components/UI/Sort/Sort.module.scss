@@ -1,0 +1,57 @@
+.root {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .search {
+    width: 50%;
+
+    input {
+      outline: none;
+      border: 1px solid #5319ce;
+      padding: 10px 1rem;
+      width: 95%;
+      font-size: 16px;
+    }
+  }
+
+  .sortType {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    select {
+      outline: none;
+      width: 60%;
+      padding: 10px;
+      margin: 0 auto;
+      border: 1px solid #5319ce;
+      font-size: 15px;
+
+      option {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .condition {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    select {
+      outline: none;
+      width: 60%;
+      padding: 10px;
+      margin: 0 auto;
+      border: 1px solid #5319ce;
+      font-size: 15px;
+
+      option {
+      }
+    }
+  }
+}
