@@ -5,14 +5,12 @@ import Heading from '../../../components/UI/Heading'
 import {filters} from '../../../utils/sortSelect'
 import Error from '../../../components/Error'
 import Sort from '../../../components/UI/Sort'
-import {IoIosRefresh} from 'react-icons/io'
 import Table from '../../../components/UI/Table'
 import Pagination from '../../../components/UI/Pagination'
 
 // Component for displaying Home page
 const Main = () => {
   const {loading, data, error, actions} = Home.Hooks.Chat.use()
-  console.log(error)
 
   const [currentPage, setCurrentPage] = useState(1)
   const [sortType, setSortType] = useState('id')
