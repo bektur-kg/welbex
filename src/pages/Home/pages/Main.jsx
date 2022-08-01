@@ -23,9 +23,9 @@ const Main = () => {
   // Getting data with query parameters when sort states changed
   useEffect(() => {
     const route = 'table'
-    const condition = `${filters[sortType][conditionSort]}=${searchInput}`
-
-    const queries = `?ordering=${sortType}&${condition}`
+    const condition = `${filters[sortType][conditionSort && conditionSort]}=${searchInput}`
+    console.log(condition)
+    const queries = `?ordering=${sortType}&${searchInput && condition}`
 
     actions.get(route, queries)
   }, [sortType, conditionSort, searchInput])
