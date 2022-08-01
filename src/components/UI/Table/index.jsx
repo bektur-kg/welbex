@@ -7,6 +7,7 @@ import EmptyData from '../../Empty'
 
 // Component for displaying table with filtered and searched data
 const Table = ({data, loading}) => {
+  console.log(data)
 
   return (
     <table className={cls.root}>

@@ -7,6 +7,7 @@ const TableHead = ({data}) => {
   useEffect(() => {
     setHeadKeys(Object.keys(data))
   }, [])
+  console.log(headKeys)
 
 
   return (

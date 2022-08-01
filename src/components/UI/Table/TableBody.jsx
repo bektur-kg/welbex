@@ -8,10 +8,10 @@ const TableBody = ({id, date, title, quantity, distance}) => {
         {id}
       </td>
       <td>
-        {date}
+        {title}
       </td>
       <td>
-        {title}
+        {date}
       </td>
       <td>
         {quantity}
